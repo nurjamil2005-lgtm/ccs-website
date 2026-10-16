@@ -85,7 +85,7 @@ const staff = ref([
 <style scoped>
 .faculty {
   padding: 6rem 3rem;
-  background: #f0fdf4;
+  background: #080808;
   scroll-margin-top: 80px;
 }
 .container {

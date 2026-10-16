@@ -77,7 +77,6 @@ import logoImg from '@/assets/images/css-logo.png'
 .nav-links a:hover,
 .nav-links a.router-link-active {
   color: #14532d;
-  border-bottom-color: #84cc16;
 }
 
 @media (max-width: 900px) {

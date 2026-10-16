@@ -4,23 +4,18 @@
       <img :src="logoImg" alt="CCS Logo" class="logo" />
       <span class="brand-name">College of Computer Studies</span>
     </div>
-    <button class="menu-toggle" @click="isMenuOpen = !isMenuOpen">
-      ☰
-    </button>
-    <ul class="nav-links" :class="{ open: isMenuOpen }">
-      <li><RouterLink to="/#hero" @click="isMenuOpen = false">Home</RouterLink></li>
-      <li><RouterLink to="/#program" @click="isMenuOpen = false">Programs</RouterLink></li>
-      <li><RouterLink to="/#faculty" @click="isMenuOpen = false">Faculty & Staff</RouterLink></li>
-      <li><RouterLink to="/#partners" @click="isMenuOpen = false">Partners</RouterLink></li>
+    <ul class="nav-links">
+      <li><RouterLink to="/#hero">Home</RouterLink></li>
+      <li><RouterLink to="/#program">Programs</RouterLink></li>
+      <li><RouterLink to="/#faculty">Faculty & Staff</RouterLink></li>
+      <li><RouterLink to="/#partners">Partners</RouterLink></li>
     </ul>
   </nav>
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import logoImg from '@/assets/images/css-logo.png'
 
-const isMenuOpen = ref(false)
 </script>
 
 <style scoped>
@@ -59,16 +54,6 @@ const isMenuOpen = ref(false)
   white-space: nowrap;
 }
 
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #14532d;
-  padding: 0;
-}
-
 .nav-links {
   display: flex;
   gap: 30px;
@@ -98,10 +83,6 @@ const isMenuOpen = ref(false)
 @media (max-width: 900px) {
   .main-nav {
     padding: 15px 20px;
-  }
-
-  .menu-toggle {
-    display: block;
   }
 
   .nav-links {

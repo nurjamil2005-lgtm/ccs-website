@@ -75,7 +75,7 @@ const faculty = ref([
 ])
 
 const staff = ref([
-  { name: 'Chrislyn C. Castaño', position: 'Secretary', img: 'chrislyn.jpg' },
+  { name: 'Chrislyn C. Castaño', position: 'Secretary', img: 'chrislyn.jpg' }, 
   { name: 'A.M.P. Latter P. Taasan', position: 'Lab Technician', img: 'latter.jpg' },
   { name: 'Chriselda Elaine Ador', position: 'Guidance Counselor', img: 'chriselda.jpg' },
   { name: 'Donna May Rivera', position: 'Library Liaison Officer', img: 'donna.png' }

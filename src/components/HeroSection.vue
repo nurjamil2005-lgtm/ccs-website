@@ -67,6 +67,9 @@ import logoImg from '@/assets/images/css-logo.png'
   flex-wrap: nowrap;
   white-space: nowrap;
 }
+.values:hover {
+  transform: translateY(-8px);
+}
 
 .values span {
   color: #14532d;
@@ -75,6 +78,9 @@ import logoImg from '@/assets/images/css-logo.png'
   padding: 0.8rem 1.2rem;
   border-bottom: 3px solid #b8860b;
   letter-spacing: 2px;
+}
+.values span:hover {
+  transform: translateY(-8px);
 }
 
 @media (max-width: 900px) {
